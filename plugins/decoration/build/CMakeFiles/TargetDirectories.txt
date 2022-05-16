@@ -1,0 +1,10 @@
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/install/local.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/edit_cache.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/KF5WindowSystem_QCH.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/install/strip.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/KF5Config_QCH.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/install.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/list_install_components.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/rebuild_cache.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/cutefishdecoration.dir
+/home/tokyo/cuteclone/kwin-plugins/plugins/decoration/build/CMakeFiles/KF5CoreAddons_QCH.dir

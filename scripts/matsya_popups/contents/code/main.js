@@ -19,8 +19,8 @@ var blocklist = [
 ];
 
 var allowlist = [
-    "cutefish-launcher cutefish-launcher",
-    "cutefish-screenshot cutefish-screenshot"
+    "matsya-launcher matsya-launcher",
+    "matsya-screenshot matsya-screenshot"
 ];
 
 function isPopupWindow(window) {
@@ -72,10 +72,10 @@ function isPopupWindow(window) {
     return false;
 }
 
-var cutefishPopupsEffect = {
+var matsyaPopupsEffect = {
     loadConfig: function () {
-        cutefishPopupsEffect.fadeInDuration = animationTime(100);
-        cutefishPopupsEffect.fadeOutDuration = animationTime(100) * 4;
+        matsyaPopupsEffect.fadeInDuration = animationTime(100);
+        matsyaPopupsEffect.fadeOutDuration = animationTime(100) * 4;
     },
     slotWindowAdded: function (window) {
         if (effects.hasActiveFullScreenEffect) {
@@ -93,7 +93,7 @@ var cutefishPopupsEffect = {
         window.fadeInAnimation = animate({
             window: window,
             curve: QEasingCurve.Linear,
-            duration: cutefishPopupsEffect.fadeInDuration,
+            duration: matsyaPopupsEffect.fadeInDuration,
             type: Effect.Opacity,
             from: 0.0,
             to: 1.0
@@ -115,7 +115,7 @@ var cutefishPopupsEffect = {
         window.fadeOutAnimation = animate({
             window: window,
             curve: QEasingCurve.OutQuart,
-            duration: cutefishPopupsEffect.fadeOutDuration,
+            duration: matsyaPopupsEffect.fadeOutDuration,
             type: Effect.Opacity,
             from: 1.0,
             to: 0.0
@@ -135,13 +135,13 @@ var cutefishPopupsEffect = {
         }
     },
     init: function () {
-        cutefishPopupsEffect.loadConfig();
+        matsyaPopupsEffect.loadConfig();
 
-        effect.configChanged.connect(cutefishPopupsEffect.loadConfig);
-        effects.windowAdded.connect(cutefishPopupsEffect.slotWindowAdded);
-        effects.windowClosed.connect(cutefishPopupsEffect.slotWindowClosed);
-        effects.windowDataChanged.connect(cutefishPopupsEffect.slotWindowDataChanged);
+        effect.configChanged.connect(matsyaPopupsEffect.loadConfig);
+        effects.windowAdded.connect(matsyaPopupsEffect.slotWindowAdded);
+        effects.windowClosed.connect(matsyaPopupsEffect.slotWindowClosed);
+        effects.windowDataChanged.connect(matsyaPopupsEffect.slotWindowDataChanged);
     }
 };
 
-cutefishPopupsEffect.init();
+matsyaPopupsEffect.init();

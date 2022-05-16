@@ -8,7 +8,7 @@ import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.kquickcontrolsaddons 2.0
 import org.kde.kwin 2.0 as KWin
 
-import FishUI 1.0 as FishUI
+import MatsyaUI 1.0 as MatsyaUI
 
 // https://techbase.kde.org/Development/Tutorials/KWin/WindowSwitcher
 
@@ -36,18 +36,18 @@ KWin.Switcher {
         x: tabBox.screenGeometry.x + (tabBox.screenGeometry.width - dialog.width) / 2
         y: tabBox.screenGeometry.y + (tabBox.screenGeometry.height - dialog.height) / 2
 
-        FishUI.WindowHelper {
+        MatsyaUI.WindowHelper {
             id: windowHelper
         }
 
-        FishUI.WindowBlur {
+        MatsyaUI.WindowBlur {
             view: dialog
             geometry: Qt.rect(dialog.x, dialog.y, dialog.width, dialog.height)
             windowRadius: _background.radius
             enabled: windowHelper.compositing
         }
 
-        FishUI.WindowShadow {
+        MatsyaUI.WindowShadow {
             view: dialog
             geometry: Qt.rect(dialog.x, dialog.y, dialog.width, dialog.height)
             radius: _background.radius
@@ -57,10 +57,10 @@ KWin.Switcher {
             id: _background
             anchors.fill: parent
             radius: windowHelper.compositing ? 14 : 0
-            color: FishUI.Theme.backgroundColor
-            opacity: windowHelper.compositing ? FishUI.Theme.darkMode ? 0.3 : 0.4 : 1.0
+            color: MatsyaUI.Theme.backgroundColor
+            opacity: windowHelper.compositing ? MatsyaUI.Theme.darkMode ? 0.3 : 0.4 : 1.0
 
-            border.color: FishUI.Theme.darkMode ? "#686868" : "#D9D9D9"
+            border.color: MatsyaUI.Theme.darkMode ? "#686868" : "#D9D9D9"
             border.width: windowHelper.compositing ? 0 : 1
         }
 
@@ -199,7 +199,7 @@ KWin.Switcher {
                             Layout.fillWidth: true
                             elide: Text.ElideRight
                             horizontalAlignment: Text.AlignHCenter
-                            color: isCurrent ? FishUI.Theme.highlightedTextColor : FishUI.Theme.textColor
+                            color: isCurrent ? MatsyaUI.Theme.highlightedTextColor : MatsyaUI.Theme.textColor
                         }
                     }
                 } // GridView.delegate
@@ -209,9 +209,9 @@ KWin.Switcher {
 
                     Rectangle {
                         anchors.fill: parent
-                        anchors.margins: FishUI.Units.largeSpacing
+                        anchors.margins: MatsyaUI.Units.largeSpacing
                         radius: _background.radius
-                        color: FishUI.Theme.highlightColor
+                        color: MatsyaUI.Theme.highlightColor
                         opacity: 0.7
                     }
                 }

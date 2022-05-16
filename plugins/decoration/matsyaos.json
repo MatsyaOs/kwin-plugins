@@ -2,8 +2,8 @@
     "KPlugin": {
         "Description": "Window decoration",
         "EnabledByDefault": true,
-        "Id": "org.cutefish.decoration",
-        "Name": "CutefishOS Window Frame",
+        "Id": "org.matsya.decoration",
+        "Name": "MatsyaOS Window Frame",
         "ServiceTypes": [
             "org.kde.kdecoration2"
         ]

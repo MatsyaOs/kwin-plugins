@@ -39,11 +39,11 @@
 #include <cmath>
 
 K_PLUGIN_FACTORY_WITH_JSON(
-    MatsyaDecorationFactory,
-    "matsyaos.json",
-    registerPlugin<Matsya::Decoration>(););
+    CutefishDecorationFactory,
+    "cutefishos.json",
+    registerPlugin<Cutefish::Decoration>(););
 
-namespace Matsya
+namespace Cutefish
 {
 static int g_sDecoCount = 0;
 static int g_shadowSize = 0;
@@ -53,7 +53,7 @@ static QSharedPointer<KDecoration2::DecorationShadow> g_sShadow;
 
 Decoration::Decoration(QObject *parent, const QVariantList &args)
     : KDecoration2::Decoration(parent, args)
-    , m_settings(new QSettings(QSettings::UserScope, "matsyaos", "theme"))
+    , m_settings(new QSettings(QSettings::UserScope, "cutefishos", "theme"))
     , m_settingsFile(m_settings->fileName())
     , m_fileWatcher(new QFileSystemWatcher)
     , m_x11Shadow(new X11Shadow)
@@ -148,7 +148,7 @@ void Decoration::init()
     connect(c, &KDecoration2::DecoratedClient::adjacentScreenEdgesChanged, this, &Decoration::updateButtonsGeometry);
     connect(c, &KDecoration2::DecoratedClient::shadedChanged, this, &Decoration::updateButtonsGeometry);
 
-    // matsyaos settings
+    // cutefishos settings
     m_fileWatcher->addPath(m_settingsFile);
     connect(m_fileWatcher, &QFileSystemWatcher::fileChanged, this, [=] {
         m_settings->sync();
@@ -231,7 +231,7 @@ void Decoration::updateButtonsGeometry()
     auto s = settings();
     // auto c = client().toStrongRef().data();
     int rightMargin = 2;
-    int btnSpacing = 4;
+    int btnSpacing = 8;
 
     foreach (const QPointer<KDecoration2::DecorationButton> &button, m_leftButtons->buttons() + m_rightButtons->buttons()) {
         button.data()->setGeometry(QRectF(QPoint(0, 0), QSizeF(titleBarHeight(), titleBarHeight())));
@@ -329,7 +329,7 @@ void Decoration::updateShadow()
 
 void Decoration::updateBtnPixmap()
 {
-    int size = 16;
+    int size = 24;
     QString dirName = darkMode() ? "dark" : "light";
 
     m_closeBtnPixmap = fromSvgToPixmap(QString(":/images/%1/close_normal.svg").arg(dirName), QSize(size, size));
@@ -361,7 +361,7 @@ int Decoration::titleBarHeight() const
 
 bool Decoration::darkMode() const
 {
-    QSettings settings(QSettings::UserScope, "matsyaos", "theme");
+    QSettings settings(QSettings::UserScope, "cutefishos", "theme");
     return settings.value("DarkMode", false).toBool();
 }
 

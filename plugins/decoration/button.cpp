@@ -74,12 +74,12 @@ void Button::paint(QPainter *painter, const QRect &repaintRegion)
     painter->setRenderHint(QPainter::SmoothPixmapTransform, false);
     painter->setRenderHints(QPainter::Antialiasing, true);
 
-    QRect btnRect(0, 0, 22 * decoration->devicePixelRatio(),
-                        22 * decoration->devicePixelRatio());
+    QRect btnRect(0, 0, 26 * decoration->devicePixelRatio(),
+                        26 * decoration->devicePixelRatio());
     btnRect.moveCenter(rect.center());
 
-    QRect imgRect(0, 0, 22 * decoration->devicePixelRatio(),
-                        22 * decoration->devicePixelRatio());
+    QRect imgRect(0, 0, 24 * decoration->devicePixelRatio(),
+                        24 * decoration->devicePixelRatio());
     imgRect.moveCenter(rect.center());
 
     if (isHovered() || isPressed()) {

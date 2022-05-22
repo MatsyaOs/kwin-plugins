@@ -1,4 +1,4 @@
-project (matsyadecoration)
+project (cutefishdecoration)
 set(CMAKE_CXX_STANDARD 11)
 
 find_package(KF5CoreAddons REQUIRED)
@@ -14,11 +14,11 @@ set (decoration_SRCS
     resources.qrc
 )
 
-add_library (matsyadecoration MODULE
+add_library (cutefishdecoration MODULE
     ${decoration_SRCS}
 )
 
-target_link_libraries (matsyadecoration
+target_link_libraries (cutefishdecoration
     PUBLIC
         Qt5::Core
         Qt5::Gui
@@ -33,5 +33,5 @@ target_link_libraries (matsyadecoration
         KDecoration2::KDecoration
 )
 
-install (TARGETS matsyadecoration
+install (TARGETS cutefishdecoration
          DESTINATION ${QT_PLUGINS_DIR}/org.kde.kdecoration2)

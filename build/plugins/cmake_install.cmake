@@ -1,4 +1,4 @@
-# Install script for directory: /home/tokyo/matsyaos/done/kwin-plugins/plugins
+# Install script for directory: /home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/cmake_install.cmake")
-  include("/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/roundedwindow/cmake_install.cmake")
+  include("/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/cmake_install.cmake")
+  include("/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/roundedwindow/cmake_install.cmake")
 
 endif()
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tokyo/matsyaos/done/kwin-plugins/plugins/roundedwindow
+# Install script for directory: /home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/roundedwindow
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/usr/lib/qt/plugins/kwin/effects/plugins/libroundedwindow.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/qt/plugins/kwin/effects/plugins/libroundedwindow.so")
     file(RPATH_CHECK
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/lib/qt/plugins/kwin/effects/plugins" TYPE MODULE FILES "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/roundedwindow/libroundedwindow.so")
+  file(INSTALL DESTINATION "/usr/lib/qt/plugins/kwin/effects/plugins" TYPE MODULE FILES "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/roundedwindow/libroundedwindow.so")
   if(EXISTS "$ENV{DESTDIR}/usr/lib/qt/plugins/kwin/effects/plugins/libroundedwindow.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/qt/plugins/kwin/effects/plugins/libroundedwindow.so")
     if(CMAKE_INSTALL_DO_STRIP)

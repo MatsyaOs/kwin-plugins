@@ -1,12 +1,12 @@
 {
-	"BUILD_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen",
-	"CMAKE_BINARY_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration",
+	"BUILD_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen",
+	"CMAKE_BINARY_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/CMakeLists.txt",
+		"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/CMakeLists.txt",
 		"/usr/lib64/cmake/KF5CoreAddons/KF5CoreAddonsConfigVersion.cmake",
 		"/usr/lib64/cmake/KF5CoreAddons/KF5CoreAddonsConfig.cmake",
 		"/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
@@ -75,35 +75,35 @@
 		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfig.cmake",
 		"/usr/lib64/cmake/Qt5X11Extras/Qt5X11ExtrasConfigVersion.cmake",
 		"/usr/lib64/cmake/Qt5X11Extras/Qt5X11ExtrasConfig.cmake",
-		"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/resources.qrc"
+		"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/resources.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins",
+	"CMAKE_SOURCE_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/button.h",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/button.h",
 			"MU",
 			"EWIEGA46WW/moc_button.cpp",
 			null
 		],
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/decoration.h",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/decoration.h",
 			"MU",
 			"EWIEGA46WW/moc_decoration.cpp",
 			null
 		],
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/x11shadow.h",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/x11shadow.h",
 			"MU",
 			"EWIEGA46WW/moc_x11shadow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"KCOREADDONS_LIB",
@@ -136,8 +136,8 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration",
-		"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration",
+		"/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration",
+		"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration",
 		"/usr/include/qt",
 		"/usr/include/qt/QtCore",
 		"/usr/lib/qt/mkspecs/linux-g++",
@@ -153,12 +153,12 @@
 		"/usr/include/KF5/KWindowSystem",
 		"/usr/include/KDecoration2",
 		"/usr/include",
-		"/usr/include/c++/12.1.0",
-		"/usr/include/c++/12.1.0/x86_64-pc-linux-gnu",
-		"/usr/include/c++/12.1.0/backward",
-		"/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include",
+		"/usr/include/c++/12.2.0",
+		"/usr/include/c++/12.2.0/x86_64-pc-linux-gnu",
+		"/usr/include/c++/12.2.0/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include",
 		"/usr/local/include",
-		"/usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed"
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/12.2.0/include-fixed"
 	],
 	"MOC_MACRO_NAMES" : 
 	[
@@ -181,31 +181,31 @@
 		"-c",
 		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/matsyadecoration_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/CMakeFiles/matsyadecoration_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/CMakeFiles/matsyadecoration_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/bin/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/CMakeFiles/matsyadecoration_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/CMakeFiles/matsyadecoration_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/button.cpp",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/button.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/decoration.cpp",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/decoration.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration/x11shadow.cpp",
+			"/home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration/x11shadow.cpp",
 			"MU",
 			null
 		]

@@ -1,4 +1,4 @@
-# Install script for directory: /home/tokyo/matsyaos/done/kwin-plugins/plugins/decoration
+# Install script for directory: /home/tokyo/matsyaos/QT6/done/kwin-plugins/plugins/decoration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -42,7 +42,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}/usr/lib/qt/plugins/org.kde.kdecoration2/libmatsyadecoration.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/qt/plugins/org.kde.kdecoration2/libmatsyadecoration.so")
     file(RPATH_CHECK
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/lib/qt/plugins/org.kde.kdecoration2" TYPE MODULE FILES "/home/tokyo/matsyaos/done/kwin-plugins/build/plugins/decoration/libmatsyadecoration.so")
+  file(INSTALL DESTINATION "/usr/lib/qt/plugins/org.kde.kdecoration2" TYPE MODULE FILES "/home/tokyo/matsyaos/QT6/done/kwin-plugins/build/plugins/decoration/libmatsyadecoration.so")
   if(EXISTS "$ENV{DESTDIR}/usr/lib/qt/plugins/org.kde.kdecoration2/libmatsyadecoration.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}/usr/lib/qt/plugins/org.kde.kdecoration2/libmatsyadecoration.so")
     if(CMAKE_INSTALL_DO_STRIP)
